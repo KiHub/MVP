@@ -18,6 +18,8 @@
 		0BF8733E27BC64980024AD00 /* MVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8733D27BC64980024AD00 /* MVPUITestsLaunchTests.swift */; };
 		0BF8734B27BC64C70024AD00 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8734A27BC64C70024AD00 /* Person.swift */; };
 		0BF8734D27BC68D20024AD00 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8734C27BC68D20024AD00 /* MainPresenter.swift */; };
+		0BF8735327BD57E10024AD00 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8735227BD57E10024AD00 /* MainViewController.xib */; };
+		0BF8735527BD5A300024AD00 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8735427BD5A300024AD00 /* ModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		0BF8733D27BC64980024AD00 /* MVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0BF8734A27BC64C70024AD00 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0BF8734C27BC68D20024AD00 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		0BF8735227BD57E10024AD00 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		0BF8735427BD5A300024AD00 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +109,8 @@
 			children = (
 				0BF8731A27BC64920024AD00 /* AppDelegate.swift */,
 				0BF8731C27BC64920024AD00 /* SceneDelegate.swift */,
-				0BF8731E27BC64920024AD00 /* MainViewController.swift */,
-				0BF8734A27BC64C70024AD00 /* Person.swift */,
-				0BF8734C27BC68D20024AD00 /* MainPresenter.swift */,
+				0BF8735427BD5A300024AD00 /* ModuleBuilder.swift */,
+				0BF8734E27BD52D00024AD00 /* MainModule */,
 				0BF8732027BC64920024AD00 /* Main.storyboard */,
 				0BF8732327BC64970024AD00 /* Assets.xcassets */,
 				0BF8732527BC64970024AD00 /* LaunchScreen.storyboard */,
@@ -131,6 +134,41 @@
 				0BF8733D27BC64980024AD00 /* MVPUITestsLaunchTests.swift */,
 			);
 			path = MVPUITests;
+			sourceTree = "<group>";
+		};
+		0BF8734E27BD52D00024AD00 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				0BF8734F27BD52E60024AD00 /* View */,
+				0BF8735027BD52ED0024AD00 /* Model */,
+				0BF8735127BD52F60024AD00 /* Presenter */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		0BF8734F27BD52E60024AD00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BF8731E27BC64920024AD00 /* MainViewController.swift */,
+				0BF8735227BD57E10024AD00 /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BF8735027BD52ED0024AD00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BF8734A27BC64C70024AD00 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BF8735127BD52F60024AD00 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0BF8734C27BC68D20024AD00 /* MainPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +278,7 @@
 				0BF8732727BC64970024AD00 /* LaunchScreen.storyboard in Resources */,
 				0BF8732427BC64970024AD00 /* Assets.xcassets in Resources */,
 				0BF8732227BC64920024AD00 /* Main.storyboard in Resources */,
+				0BF8735327BD57E10024AD00 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +308,7 @@
 				0BF8731B27BC64920024AD00 /* AppDelegate.swift in Sources */,
 				0BF8734B27BC64C70024AD00 /* Person.swift in Sources */,
 				0BF8731D27BC64920024AD00 /* SceneDelegate.swift in Sources */,
+				0BF8735527BD5A300024AD00 /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
