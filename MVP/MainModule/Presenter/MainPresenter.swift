@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol MainViewProtocol {
+protocol MainViewProtocol: AnyObject {
     func setGreeting(greeting: String)
 }
 
-protocol MainViewPresenterProtocol {
+protocol MainViewPresenterProtocol: AnyObject {
     init(view: MainViewProtocol, person: Person)
         func showGreeting()
     
